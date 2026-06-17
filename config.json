@@ -1,30 +1,39 @@
 {
   "public": {
     "default": {
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/FVHbh3XeiLPt1MqEks1ANj/graphqlhttps://www.aemshop.net/graphql",
+      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/FVHbh3XeiLPt1MqEks1ANj/graphql",
       "headers": {
+        "all": {
+          "Store": "default"
+        },
         "cs": {
-          "AC-View-ID": "{{HEADER_VALUE}}",
-          "AC-Price-Book-ID": "{{HEADER_VALUE}}"
+          "Magento-Store-Code": "citisignal",
+          "Magento-Store-View-Code": "citisignal",
+          "Magento-Website-Code": "citisignal"
         }
       },
       "commerce-b2b-enabled": false,
       "commerce-companies-enabled": false,
       "commerce-assets-enabled": true,
-      "adobe-commerce-optimizer": true,
+      "adobe-commerce-optimizer": false,
       "analytics": {
-        "base-currency-code": "{{CURRENCY_CODE}}",
+        "base-currency-code": "USD",
         "environment": "Testing",
-        "environment-id": "{{ENVIRONMENT_ID}}",
-        "locale": "{{LOCALE}}",
-        "store-url": "{{STORE_URL}}",
-        "store-view-currency-code": "{{CURRENCY_CODE}}",
-        "storefront-template": "{{TEMPLATE_TYPE}}",
-        "view-id": "{{CATALOG_VIEW_ID}}"
+        "environment-id": "FVHbh3XeiLPt1MqEks1ANj",
+        "store-code": "citisignal",
+        "store-id": "citisignal",
+        "store-name": "CitiSignal",
+        "store-url": "https://coresaas-subgraph-external:8000/FVHbh3XeiLPt1MqEks1ANj/",
+        "store-view-code": "citisignal",
+        "store-view-id": "citisignal",
+        "store-view-name": "CitiSignal",
+        "website-code": "citisignal",
+        "website-id": "citisignal",
+        "website-name": "CitiSignal"
       },
       "plugins": {
         "picker": {
-          "rootCategory": "{{ROOT_CATEGORY_ID}}"
+          "rootCategory": "2"
         }
       }
     }
